@@ -12,12 +12,22 @@
 
 ## 1. Создание ветки для нового класса
 
-bash
-
-`git checkout -b feature/move-class develop`
+```bash
+git checkout -b feature/move-class develop
+```
 
 От ветки develop создатся новая ветка feature/name-class
 После завершения разработки функции изолированно, эта ветка сливается с веткой develope см ниже.
+
+Дальше небходимо создать для нее ветку удаленную ветку на сервере. Это можно сделать либо командой, привязав к удаленной ветке
+
+```bash
+git branch --set-upstream-to=origin/my-feature my-feature
+```
+
+Либо кнопкной Publish branch
+
+Ветка можеть быть запушенна в репозиторий только при наличии хотябы одного изменения (коммита)
 
 ## 2. Структура файлов в ветке
 
@@ -70,14 +80,27 @@ git push -u origin feature/move-class
 
 **Слияние с develop**
 
-- После завершения работы ветка feature/name-class сливается с develop через Pull Request
+- После завершения работы ветка feature/name-class сливается с develop 
   
   ```bash
   git checkout develop
   git merge feature/move-class
   ```
-  
-  После слияния класс тестируется в интеграции с main.cpp
+
+После нужно удалить ветку feature/move-class
+**Локально**
+
+```bash
+git branch -d feature/move-class
+```
+
+**Удаленно**
+
+```bash
+git push origin --delete feature/move-class
+```
+
+После слияния класс тестируется в интеграции с main.cpp
 
 ```cpp
 #include "Move/Move.h" 
@@ -96,9 +119,9 @@ git checkout -b release/v1.0 develop
 ```
 
 - Тестируете финальную версию, затем:
-  
-  ```bash
+
+```bash
   git checkout main git merge release/v1.0 git tag -a v1.0 -m "Релиз движения"
-  ```
+```
 
 Для слияния с main также создается Pull Request
