@@ -88,6 +88,7 @@ git push -u origin feature/move-class
   ```
 
 После нужно удалить ветку feature/move-class
+
 **Локально**
 
 ```bash
