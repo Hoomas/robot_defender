@@ -84,7 +84,7 @@ cd <имя_папки_проекта>
 
 Чтобы пользоваться Git Bash нужно добавить этот терминал в меню
 
-<img src="file:Instruction/images/2025-05-06-20-45-53-image.png" title="" alt="" data-align="center">
+<img src="file:Instructions/images/2025-05-06-20-45-53-image.png" title="" alt="" data-align="center">
 
 <img title="" src="file:Instructions/images/2025-05-06-20-46-14-image.png" alt="" data-align="center">
 
