@@ -70,7 +70,7 @@ git config --global user.email "ваш_email@example.com"
 Нажимаем на кнопку Clone Repository и клонируем репозиторий https://github.com/Hoomas/robot_defender, попутно авторизируясь через Git Hub
 
 Дальше выбираем доверять автору
-![](file:Instruction\images\2025-05-05-15-01-05-image.png)
+![](images/2025-05-05-15-01-05-image.png)
 
 Или при помощи git bash
 
@@ -84,9 +84,9 @@ cd <имя_папки_проекта>
 
 Чтобы пользоваться Git Bash нужно добавить этот терминал в меню
 
-<img src="file:Instructions/images/2025-05-06-20-45-53-image.png" title="" alt="" data-align="center">
+![](images/2025-05-06-20-45-53-image.png)
 
-<img title="" src="file:Instructions/images/2025-05-06-20-46-14-image.png" alt="" data-align="center">
+![](images/2025-05-06-20-46-14-image.png)
 
 ## Основные термины
 
