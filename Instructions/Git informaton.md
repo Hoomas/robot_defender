@@ -65,7 +65,7 @@ git config --global user.email "ваш_email@example.com"
 
 На левой панели VS Code находим иконку Source Control
 
-![](Instructions/images/2025-05-05-14-57-16-image.png)
+![](images/2025-05-05-14-57-16-image.png)
 
 Нажимаем на кнопку Clone Repository и клонируем репозиторий https://github.com/Hoomas/robot_defender, попутно авторизируясь через Git Hub
 
